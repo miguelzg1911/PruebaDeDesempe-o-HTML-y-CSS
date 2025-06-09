@@ -1,0 +1,106 @@
+/* Selectors with specificity */
+
+div {
+    color: rgb(25, 0, 255);
+    font-weight: 800;
+}
+
+.highlight {
+    color: red;
+}
+
+#special {
+    color: rgb(25, 0, 255);
+}
+
+body {
+    background-color: #a7c6e6;
+    border: 5px solid #000;
+    box-shadow: 50px 50px 20px rgba(0,0,0,0.5);
+    padding: 20px;
+    margin: 100px;
+}
+
+.content {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 5px solid #333;
+    background-color: rgb(240, 245, 255);
+}
+
+.inline-block {
+    display: inline-block;
+    width: 100px;
+    height: 150px;
+    background-color: rgb(59, 175, 214);
+    margin: 10px;
+    border: 3px solid #333;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    color: rgb(20, 16, 214);
+}
+
+.inline-block:hover {
+    transform: scale(1.08);
+}
+
+.fixed-box{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background-color: greenyellow;
+    padding: 10px;
+    color: black;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.rotate-box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transform: rotate(120deg);
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.box::before {
+    content: "New!";
+    color: red;
+    font-weight: 900;
+}
+
+.fade-in {
+    animation: fade 3s ease-in-out infinite;
+}
+
+@keyframes fade {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    font-weight: 800;
+    background-color: #1f2937;
+    color: azure;
+    text-align: center;
+}
+
+html {
+    background-color: #1f2937
+}

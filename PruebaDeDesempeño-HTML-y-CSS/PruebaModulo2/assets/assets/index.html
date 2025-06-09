@@ -1,0 +1,50 @@
+<!-- First we add that this is an HTML5 file. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS NINJA</title>
+    <link rel="stylesheet" href="./Style/styles.css"> <!-- Here we call us through the "Link" tag to the CSS file so that the styles are added to the page -->.
+</head>
+<body>
+    <!-- The "Header" tag is used to indicate that this is the header of the page, with the main title (h1) -->.
+    <header>
+        <h1>Welcome to CSS Ninja Training</h1>
+        <p>Here you can become a professional in CSS styles and effects!</p>
+    </header>
+
+    <!-- A section is created for selectors and specificity, where a small amount of content is grouped. -->.
+    <section class="content">
+        <h2>CSS Selectors and Specificity</h2>
+        <div class="box highlight" id="special"> This box is special!</div>
+    </section>
+
+    <!-- This is a Section to display blocks, (I used an inline-block in the class so that another box would appear behind it). -->
+    <section class="inline-block">
+        <div class="inline-block"><h2>Box - inline-block</h2></div>
+    </section>
+
+    <!-- This section is for visual effects. I use a fade-in class for animation, and a rotate-box class to allow the box to rotate. -->
+    <section class="visual-effects">
+        <h2>Visual Customization</h2>
+        <div class="box fade-in"> This box has a shadow and border!</div>
+        <div class="rotate-box">Rotated Box</div>
+    </section>
+
+    <!-- This section is for when we move the mouse over the link, the color changes. -->
+    <section class="interactivity">
+        <h2>Interactive Elements</h2>
+        <a href="#">Hover over me!</a>
+    </section>
+
+    <!-- Here I'm using a div for a fixed box, using fixed-box. It should always be visible.-->
+    <div class="fixed-box">I am fixed!</div>
+
+    <!-- Here the footer is used for the footer of the page. -->
+    <footer>
+        <p>@Created by a CSS Ninja in training.</p>
+    </footer>
+</body>
+</html>

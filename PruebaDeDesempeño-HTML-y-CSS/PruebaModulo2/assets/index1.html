@@ -1,0 +1,60 @@
+<!-- Basic structure, we define the HTML5 document, metadata. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- The header that contains the main title and a navigation menu -->
+    <header>
+        <h1>Welcome to Responsive Design Page</h1>
+        <nav>
+            <ul> <!-- Menu list-->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main with two sections -->
+    <main>
+        <section> <!-- The first one with a title and paragraph -->
+            <h2>Our Services</h2>
+            <p>We offer web design and development services to create responsive and user-friendly websites.</p>
+        </section>
+
+        <!-- And the second one with a container where we add the Grid, to display three services (each in a div)
+            (three boxes organized in the middle of the display: grid) -->
+        <section class="grid-container">
+            <div class="grid-item">
+                <a href="#">
+                    <span>Service 1</span>
+                    <img src="./assets/Imagen1.png" alt="Service 1 Image">
+                </a>
+            </div> <!-- In each div there is an image, to then show a growth style in CSS, through them -->
+            <div class="grid-item">
+                <a href="#">
+                    <span>Service 2</span>
+                    <img src="./assets/Imagen2.png" alt="Service 2 Image">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <span>Service 3</span>
+                    <img src="./assets/grid_gaps.png" alt="Service 3 Image">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer where it was added that it is a responsive page -->
+    <footer>
+        <p>&copy; 2025 Responsive Web Design</p>
+    </footer>
+</body>
+</html>
